@@ -1,4 +1,3 @@
- 
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/hw/camera.vendor.bacon.so:vendor/lib/hw/camera.vendor.bacon.so

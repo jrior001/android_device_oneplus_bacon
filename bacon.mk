@@ -79,8 +79,7 @@ PRODUCT_PACKAGES += \
     init.bacon.rc \
     init.qcom.usb.rc \
     init.recovery.bacon.rc \
-    libinit_bacon \
-    ueventd.bacon.rc
+    libinit_bacon
 
 # Call the proprietary setup
 $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)

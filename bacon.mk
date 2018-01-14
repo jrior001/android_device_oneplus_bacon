@@ -82,10 +82,6 @@ PRODUCT_PACKAGES += \
     libinit_bacon \
     ueventd.bacon.rc
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.bacon
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl

@@ -82,10 +82,6 @@ PRODUCT_PACKAGES += \
     libinit_bacon \
     ueventd.bacon.rc
 
-# Thermal config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine-8974.conf
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.bacon

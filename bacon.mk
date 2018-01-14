@@ -82,27 +82,6 @@ PRODUCT_PACKAGES += \
     libinit_bacon \
     ueventd.bacon.rc
 
-# WiFi
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
-
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
-    wificond \
-    hostapd \
-    wcnss_service \
-    wpa_supplicant
-
-PRODUCT_PACKAGES += \
-    hostapd_default.conf \
-    hostapd.accept \
-    hostapd.deny \
-    wpa_supplicant.conf \
-    wpa_supplicant_overlay.conf \
-    p2p_supplicant_overlay.conf
-
 # Call the proprietary setup
 $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 

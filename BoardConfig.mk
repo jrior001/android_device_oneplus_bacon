@@ -18,10 +18,8 @@
 # inherit from Oppo msm8974-common
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
-PLATFORM_PATH := device/oneplus/bacon
-
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH := device/oneplus/bacon/include
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -39,7 +37,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/oneplus/bacon/board-info.txt
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -62,7 +60,7 @@ AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon/bluetooth
 
 # Camera
 TARGET_USE_COMPAT_GRALLOC_ALIGN := true
@@ -98,13 +96,13 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_bacon
 BOARD_NFC_CHIPSET := pn547
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
+TARGET_RECOVERY_FSTAB := device/oneplus/bacon/rootdir/etc/fstab.bacon
 
 # RPC
 TARGET_NO_RPC := true
 
 BOARD_SEPOLICY_DIRS += \
-    $(PLATFORM_PATH)/sepolicy
+    device/oneplus/bacon/sepolicy
 
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true

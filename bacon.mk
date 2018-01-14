@@ -20,8 +20,8 @@ endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-	$(LOCAL_PATH)/overlay \
-	$(LOCAL_PATH)/overlay-lineage
+	device/oneplus/bacon/overlay \
+	device/oneplus/bacon/overlay-lineage
 
 # API (for CTS backward compatibility)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -29,9 +29,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/audio_policy.conf:system/vendor/etc/audio_policy.conf \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml
+    device/oneplus/bacon/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
+    device/oneplus/bacon/audio/audio_policy.conf:system/vendor/etc/audio_policy.conf \
+    device/oneplus/bacon/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -39,9 +39,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.bacon \
-    libshim_camera \
-    libshim_cameraclient
+    camera.bacon
 
 # Dalvik/HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
@@ -53,7 +51,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/synaptics-rmi-ts.kl:system/usr/keylayout/synaptics-rmi-ts.kl
+    device/oneplus/bacon/configs/synaptics-rmi-ts.kl:system/usr/keylayout/synaptics-rmi-ts.kl
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
@@ -63,8 +61,8 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+    device/oneplus/bacon/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/oneplus/bacon/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
 # Permissions
 PRODUCT_COPY_FILES += \

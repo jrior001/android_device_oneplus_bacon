@@ -18,9 +18,6 @@
 # inherit from Oppo msm8974-common
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
-# Assertions
-TARGET_BOARD_INFO_FILE ?= device/oneplus/bacon/board-info.txt
-
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 TARGET_KERNEL_CONFIG := lineageos_bacon_defconfig

@@ -184,16 +184,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    power.msm8974
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.bacon \
     init.bacon.rc \
-    init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.bacon.rc \
     libinit_bacon \

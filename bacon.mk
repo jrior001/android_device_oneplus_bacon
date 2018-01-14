@@ -82,10 +82,6 @@ PRODUCT_PACKAGES += \
     libinit_bacon \
     ueventd.bacon.rc
 
-# Widevine
-PRODUCT_PACKAGES += \
-    libshim_wvm
-
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \

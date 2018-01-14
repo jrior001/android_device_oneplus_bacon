@@ -23,12 +23,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 	$(LOCAL_PATH)/overlay \
 	$(LOCAL_PATH)/overlay-lineage
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library \
-    libantradio
-
 # API (for CTS backward compatibility)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=19
